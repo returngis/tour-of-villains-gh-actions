@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  calling_a_reusable_workflow:
+  calling_a_reusable_workflow:    
     uses: returngis/tour-of-heroes-gh-actions/.github/workflows/reusable-workflow.yml@main
     with:
       greeting: "Hello from tour of villains repo!"

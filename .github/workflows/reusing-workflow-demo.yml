@@ -1,0 +1,11 @@
+name: Reusing workflow demo
+
+on:
+  workflow_dispatch:    
+
+jobs:
+  calling_reusable_workflow:
+    uses: returngis/tour-of-heroes-gh-actions/.github/workflows/reusable-workflow.yml@main
+    with:
+        greeting: "Hey 👋🏻"
+    secrets: inherit 
